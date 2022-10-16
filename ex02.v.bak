@@ -1,0 +1,6 @@
+module ex02(a,b,c,sum,carry);
+input a,b,c;
+output sum,carry;
+assign sum=(a xor b xor c);
+assign carry=((a and b)(b and c)(c and a));
+endmodule
